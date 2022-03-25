@@ -19,7 +19,7 @@ function waitForElm(selector) {
 }
 
 waitForElm('._1lPgH').then((elm) => {
-    my_xpath='/html/body/div[1]/div[1]/div[1]/div[3]/div/div[2]/button'
+    my_xpath='//div[@class="zoWT4"]'
     let element = document.evaluate(my_xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null)
     element.singleNodeValue.remove()
 });
