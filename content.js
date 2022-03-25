@@ -19,7 +19,7 @@ function waitForElm(selector) {
 }
 
 waitForElm('._1lPgH').then((elm) => {
-    my_xpath='//div[@class="zoWT4"]'
+    my_xpath='//*[@data-testid="cell-frame-container" and contains(@class, "_1frFQ")]'
     let element = document.evaluate(my_xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null)
     element.singleNodeValue.remove()
 });
